@@ -789,7 +789,7 @@ def confirm_entities(detected: dict, yes: bool = False) -> dict:
             name = input("  Name (or enter to stop): ").strip()
             if not name:
                 break
-            kind = input(f"  Is '{name}' a (p)erson or (r)roject? ").strip().lower()
+            kind = input(f"  Is '{name}' a (p)erson or p(r)oject? ").strip().lower()
             if kind == "p":
                 confirmed_people.append(name)
             elif kind == "r":
